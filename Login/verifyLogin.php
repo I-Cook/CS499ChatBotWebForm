@@ -2,7 +2,8 @@
 
 	//Connect to database
 	require_once('../mysqli_con.php');
-
+	echo "Connected";
+	
 	$query = "SELECT Username FROM Accounts";
 	$result = mysqli_query($conn, $query);
 
