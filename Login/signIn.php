@@ -13,7 +13,7 @@
 </head>
 
 <body class="text-center">
-<form method="post" action="verifyLogin.php">
+<form method="post" action="mysqli_con.php">
 <h1 class="h2 mb-3 font-weight-normal">Anyware Chatbot</h1>
 <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
 <label for="inputUsername" class="sr-only">Username</label>
