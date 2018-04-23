@@ -9,13 +9,16 @@
 	die("Connection failed: " . $conn->connect_error);
        }
 
+       //create the query to be passed
        $query = "SELECT Username FROM Accounts";
        $result = mysqli_query($conn, $query);
 
+       //determine if they exist
        if (mysqli_num_rows($result) > 0){
 	   // determine the user
 	   while($row = mysqli_fetch_assoc($result)) {
 	   	      if ($row["Username"] == $_POST["inputUsername"]{
+		      	 //check that they entered their password correctly
 		      	 if ($row["Password"] == $_POST["inputPassword"]{
 		      	    require('query.php');
 			    }
