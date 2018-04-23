@@ -14,12 +14,16 @@
   </head>
 
   <body class="text-center">
-    <form action="querry.php" method="post">
-      <h1 class="h2 mb-3 font-weight-normal">Anyware Chatbot Query</h1>
-      <label for="inputQuery" class="sr-only">Query</label>
-      <input type="text" name="inputQuery" class="form-control" placeholder="" required autofocus>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-      <br><br>
-    </form>
+    <div id='bodybox'>
+      <div id='chatborder'>
+	<p id="chatlog7" class="chatlog">&nbsp;</p>
+	<p id="chatlog6" class="chatlog">&nbsp;</p>
+	<p id="chatlog5" class="chatlog">&nbsp;</p>
+	<p id="chatlog4" class="chatlog">&nbsp;</p>
+	<p id="chatlog3" class="chatlog">&nbsp;</p>
+	<p id="chatlog2" class="chatlog">&nbsp;</p>
+	<p id="chatlog1" class="chatlog">&nbsp;</p>
+	<input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+      </div>
   </body>
 </html>
