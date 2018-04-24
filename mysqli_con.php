@@ -10,7 +10,9 @@
        }
 
        //create the query to be passed
-       $query = "SELECT Username FROM Accounts";
+       $user = $_POST['inputUsername'];
+       $pass = $_POST['inputPassword'];
+       $query = "SELECT Username FROM Accounts WHERE Username='$uname'";
        $result = mysqli_query($conn, $query);
 
        //determine if they exist
