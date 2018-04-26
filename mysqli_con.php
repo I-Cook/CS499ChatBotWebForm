@@ -25,11 +25,11 @@
 	   	      if ($row["Username"] == $_POST["inputUsername"]{
 		      	 //check that they entered their password correctly
 		      	 if ($row["Password"] == $_POST["inputPassword"]{
-		      	    require('query.php');
+		      	    require('Login/query.php');
 			    }
 			 }
 	   }
 	}
 
-	require('loginFail.php');
+	require('Login/loginFail.php');
 ?>
