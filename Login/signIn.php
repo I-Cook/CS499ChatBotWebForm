@@ -5,7 +5,7 @@
   if(isset($_POST['submit'])){
     if($user == "root"){
       if($pass == "Anyware18"){
-        require('query.php');
+        require('query.html');
       }
     }
     else{
