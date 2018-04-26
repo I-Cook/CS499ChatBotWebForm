@@ -1,18 +1,3 @@
-<?php
-  $user = $_POST['inputUsername'];
-  $pass = $_POST['inputPassword'];
-
-  if(isset($_POST['submit'])){
-    if($user == "root"){
-      if($pass == "Anyware18"){
-        require('query.html');
-      }
-    }
-    else{
-      require('../mysqli_con.php');
-    }
-  }
-?>
 <html lang="en">
 <head>
 <meta charset="utf-8">
