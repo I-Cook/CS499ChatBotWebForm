@@ -23,9 +23,9 @@
        if (mysqli_num_rows($result) > 0){
 	   // determine the user
 	   while($row = mysqli_fetch_assoc($result)) {
-	   	      if ($row["Username"] == $_POST["inputUsername"]{
+	   	      if ($row["Username"] == $_POST["inputUsername"]){
 		      	 //check that they entered their password correctly
-		      	 if ($row["Password"] == $_POST["inputPassword"]{
+		      	 if ($row["Password"] == $_POST["inputPassword"]){
 		      	    require('Login/query.html');
 			    }
 			 }
