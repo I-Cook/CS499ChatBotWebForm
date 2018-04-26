@@ -3,10 +3,10 @@
        $servername = "accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com";
        $username = "Icook";
        $password = "10994467";
-       $dbname = "accounts";
+       $port = "3306";
        echo "Initializing";
        //<!-- create the connection -->
-       $conn = new mysqli($servername, $username, $password, $dbname);
+       $conn = new mysqli($servername, $username, $password, $port);
        echo "Connection done";
        if ($conn->connect_error){
 	die("Connection failed: " . $conn->connect_error);
