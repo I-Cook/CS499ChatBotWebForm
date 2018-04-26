@@ -1,9 +1,9 @@
 <?php
        //connect to accounts datadase
-       $servername = "accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com";
+       $servername = "accounts.co56k4thcnpi.us-east-1.rds.amazonaws.com";
        $username = "Icook";
        $password = "10994467";
-       $port = "3306";
+       $port = "accounts";
        echo "Initializing";
        //<!-- create the connection -->
        $conn = new mysqli($servername, $username, $password, $port);
