@@ -24,9 +24,9 @@
 <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
 <label for="inputUsername" class="sr-only">Username</label>
 <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
-$nbsp;
+&nbsp;
 <label for="inputPassword" class="sr-only">Password</label>
-<input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
+<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 &nbsp;
 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
 
