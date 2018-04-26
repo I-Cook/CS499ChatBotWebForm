@@ -1,3 +1,18 @@
+<?php
+  $user = $_POST['inputUsername'];
+  $pass = $_POST['inputPassword'];
+
+  if(isset($_POST['submit'])){
+    if($user == "root"){
+      if($pass == "Anyware18"){
+        require('query.php');
+      }
+    }
+    else{
+      require('../mysqli_con.php');
+    }
+  }
+?>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -13,14 +28,14 @@
 </head>
 
 <body class="text-center">
-<form method="post" action="mysqli_con.php">
+<form method="post">
 <h1 class="h2 mb-3 font-weight-normal">Anyware Chatbot</h1>
 <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
 <label for="inputUsername" class="sr-only">Username</label>
 <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
 <label for="inputPassword" class="sr-only">Password</label>
 <input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
-<button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+<input type="submit" name="submit" value="LOGIN">
 
 </form>
 </body>
